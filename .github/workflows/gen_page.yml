@@ -11,6 +11,7 @@ jobs:
       image: rocker/verse:latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
       - name: Config GITHUB_REPOSITORY
         run: |
@@ -36,6 +37,7 @@ jobs:
         with:
           repository: 'statprog-s1-2020/statprog-s1-2020.github.io'
           path: 'statprog-s1-2020.github.io'
+          token: $API_TOKEN_GITHUB
 
       - name: info2
         run: |
@@ -44,13 +46,22 @@ jobs:
           ls ..
           echo $GITHUB_WORKSPACE
 
+      - name: Install rsync
+        run: |
+          apt install -y rsync
+
       - name: Add changes
         run: |
-          cp -r docs/* statprog-s1-2020.github.io/
+          rsync --recursive --delete --exclude=".*" docs/ statprog-s1-2020.github.io/
+
+      - name: info3
+        run: |
+          ls -la docs/
+          ls -la statprog-s1-2020.github.io/ 
 
       - name: Commit and push changes
         run: |
           cd statprog-s1-2020.github.io/
           git add .
-          git commit -m "Updating github.io page"
+          git commit -m "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
           git push
