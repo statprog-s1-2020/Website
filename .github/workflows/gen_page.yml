@@ -6,25 +6,23 @@ name: gen_io_page
 
 jobs:
   gen_page:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/verse:latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      
-      - name: Install hugo
-        run: |
-          R -e 'blogdown::install_hugo()'
-
-      - name: Build Site
-        run: |
-          make
-
       - name: Config GITHUB_REPOSITORY
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "noreply@github.com"
+          
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Build Site
+        run: |
+          make
       
       - name: Get github.io page
         run: |
