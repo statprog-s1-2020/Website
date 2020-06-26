@@ -37,7 +37,7 @@ jobs:
         with:
           repository: 'statprog-s1-2020/statprog-s1-2020.github.io'
           path: 'statprog-s1-2020.github.io'
-          token: $API_TOKEN_GITHUB
+          token: '$API_TOKEN_GITHUB'
 
       - name: info2
         run: |
