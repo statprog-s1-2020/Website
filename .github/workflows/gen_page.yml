@@ -45,6 +45,7 @@ jobs:
 
       - name: Install rsync
         run: |
+          apt update
           apt install -y rsync
 
       - name: Add changes
