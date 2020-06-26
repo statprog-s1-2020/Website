@@ -27,8 +27,15 @@ jobs:
           git config --global user.email "noreply@github.com"
       
       - name: Get github.io page
+        uses: actions/checkout@v2
+        with:
+          repository: 'statprog-s1-2020/statprog-s1-2020.github.io'
+
+      - name: info
         run: |
-          git clone git@github.com:statprog-s1-2020/statprog-s1-2020.github.io.git
+          echo `pwd`
+          ls
+          ls ..
 
       - name: Add changes
         run: |
