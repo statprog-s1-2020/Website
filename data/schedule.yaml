@@ -1,0 +1,105 @@
+startdate: "2020-09-21"
+dateFormat: 'Mon, Jan 2'
+schedule:
+- week: 1
+  day: 0
+  lecture: "Introduction <br/> Logic and Types in R <br/> git & Github"
+  slides: 
+  screencast: 
+  readings:
+  - text: Tidyverse style guide
+    link: https://style.tidyverse.org/
+  - text: Adv-R - Data Structures
+    link: http://adv-r.had.co.nz/Data-structures.html
+  - text: Happy Git and GitHub
+    link: http://happygitwithr.com/
+  notes:
+
+- week: 2
+  day: 0
+  lecture: "Data Structures & S3 <br/> Subsetting"
+  slides: 
+  readings:
+  - text: Adv R - OO Field Guide - S3
+    link: http://adv-r.had.co.nz/OO-essentials.html#s3
+  - text: Adv-R - Subsetting
+    link: http://adv-r.had.co.nz/Subsetting.html
+  notes:
+
+- week: 3
+  day: 0
+  lecture: "Tidy data, dplyr"
+  slides: 
+  readings:
+  - text: dplyr Vignette
+    link: https://dplyr.tidyverse.org/articles/dplyr.html
+  - text: R4DS - tidy data
+    link: http://r4ds.had.co.nz/tidy-data.html
+  - text: Data transformation cheatsheet
+    link: https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
+  - text: data import cheatsheet
+    link: https://github.com/rstudio/cheatsheets/blob/master/data-import.pdf
+  notes: 
+
+- week: 4
+  day: 0
+  lecture: "purrr & tidyr"
+  slides: 
+  readings:
+  - text: Purrr tutorial
+    link: https://jennybc.github.io/purrr-tutorial/index.html
+  - text: R4DS - Iteration
+    link: http://r4ds.had.co.nz/iteration.html
+  - text: purrr cheatsheet
+    link: https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf
+  notes: 
+
+- week: 5
+  day: 0
+  lecture: "Visualization & ggplot2"
+  slides: 
+  readings:
+  - text:  R4DS - Visualization
+    link: http://r4ds.had.co.nz/data-visualisation.html
+  - text: ggplot2 Reference
+    link: http://ggplot2.tidyverse.org/reference/index.html
+  notes: 
+
+- week: 6
+  day: 0
+  lecture: "Web Scraping"
+  readings:
+  notes: 
+
+
+- week: 7
+  day: 0
+  lecture: "Simulation & Bootstrapping"
+  readings:
+  notes: 
+
+- week: 8
+  day: 0
+  lecture: "Shiny"
+  readings:
+  notes: 
+
+- week: 9
+  day: 0
+  lecture: "Markov Chain Monte Carlo"
+  readings:
+  notes: 
+
+- week: 10
+  day: 0
+  lecture: "Probabilistic Programming"
+  readings:
+  notes: 
+
+- week: 11
+  day: 0
+  lecture: "Catch up"
+  slides: 
+  readings:
+  notes: 
+
