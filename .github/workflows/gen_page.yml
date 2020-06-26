@@ -13,11 +13,7 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
-      - name: Config GITHUB_REPOSITORY
-        run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "noreply@github.com"
-          
+     
       - name: Checkout repo
         uses: actions/checkout@v2
 
@@ -25,37 +21,23 @@ jobs:
         run: |
           make
       
-      - name: info
+      - name: Config git
         run: |
-          echo `pwd`
-          ls
-          ls ..
-          echo $GITHUB_WORKSPACE
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "noreply@github.com"
       
-      - name: Get github.io page
+      - name: Clone github.io page
         run: |
           git clone "https://$API_TOKEN_GITHUB@github.com/statprog-s1-2020/statprog-s1-2020.github.io.git"
-        
-      - name: info2
-        run: |
-          echo `pwd`
-          ls
-          ls ..
-          echo $GITHUB_WORKSPACE
 
       - name: Install rsync
         run: |
           apt update
           apt install -y rsync
 
-      - name: Add changes
+      - name: Sync changes
         run: |
           rsync --recursive --delete --exclude=".*" docs/ statprog-s1-2020.github.io/
-
-      - name: info3
-        run: |
-          ls -la docs/
-          ls -la statprog-s1-2020.github.io/ 
 
       - name: Commit and push changes
         run: |
