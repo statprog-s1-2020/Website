@@ -3,7 +3,17 @@ dateFormat: 'Mon, Jan 2'
 schedule:
 - week: 1
   day: 0
-  lecture: "Introduction <br/> Logic and Types in R <br/> git & Github"
+  lecture: "Welcome"
+  slides:
+  screencast:
+  notes:
+- week: 1
+  day: 1
+  lecture: "<i>Workshop 1</i>"
+  notes: Connect via Zoom link on Learn
+- week: 1
+  day: 4
+  lecture: "Logic and Types in R"
   slides: 
   screencast: 
   readings:
@@ -15,8 +25,18 @@ schedule:
     link: http://happygitwithr.com/
   notes:
 
+
 - week: 2
   day: 0
+  lecture: "git & Github"
+  slides:
+  screencast:
+  readings:
+  - text: Happy Git and GitHub
+    link: http://happygitwithr.com/
+  notes:
+- week: 2
+  day: 4
   lecture: "Data Structures & S3 <br/> Subsetting"
   slides: 
   readings:

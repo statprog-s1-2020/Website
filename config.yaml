@@ -20,7 +20,7 @@ menu:
   - name: Piazza
     pre: <i class="fas fa-comment fa-fw"></i>
     weight: 3
-    url: http://piazza.com/ed.ac.uk/fall2019/math11176
+    url: TBD
   - name: Github
     pre: <i class='fa fa-github fa-fw'></i>
     weight: 6
@@ -28,7 +28,7 @@ menu:
   - name: RStudio
     pre: <i class='fab fa-r-project fa-fw'></i>
     weight: 7
-    url: https://noteable.edina.ac.uk/login
+    url: https://rstudio.cloud
 
 params:
   subtitle: "(2020-2021) [Sem 1]"
@@ -45,7 +45,7 @@ params:
     - about
   contact:
     - name: Dr. Colin Rundel
-      office: 2256 JCMB
+      office:
       email: colin.rundel@ed.ac.uk
       hours: TBD
     - name: Dr. Simon Wood
@@ -53,31 +53,33 @@ params:
       email: simon.wood@ed.ac.uk
       hours: TBD
   assignments:
-    - name: Homework 0
-      type: Individual
-      value: Not marked
-      out: Week 1
     - name: Homework 1
       type: Team
-      value: TBD
+      value: 12.5%
       out: Week 2
+      due: End of Week 3
     - name: Homework 2
       type: Team
-      value: TBD
+      value: 12.5%
       out: Week 4
+      due: End of Week 5
     - name: Project 1
       type: Individual
-      value: TBD
+      value: 25%
       out: Week 5
+      due: End of Week 6
     - name: Homework 3
       type: Team
-      value: TBD
+      value: 12.5%
       out: Week 7
+      due: End of Week 8
     - name: Homework 4
       type: Team
-      value: TBD
+      value: 12.5%
       out: Week 9
+      due: End of Week 10
     - name: Project 2
       type: Individual
-      value: TBD
+      value: 25%
       out: Week 10
+      due: End of Week 12
