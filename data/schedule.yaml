@@ -4,8 +4,8 @@ schedule:
 - week: 1
   day: 0
   lecture: "Welcome"
-  slides:
-  screencast:
+  slides: Lec01
+  screencast: https://www.youtube.com/watch?v=pPnG_toh9uE
   notes:
 - week: 1
   day: 1
