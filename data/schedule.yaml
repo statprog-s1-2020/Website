@@ -14,16 +14,14 @@ schedule:
 - week: 1
   day: 4
   lecture: "Logic and Types in R"
-  slides: 
-  screencast: 
+  slides: Lec02
+  screencast: https://youtu.be/9V4YqeTuTXs
   readings:
   - text: Tidyverse style guide
     link: https://style.tidyverse.org/
   - text: Adv-R - Data Structures
     link: http://adv-r.had.co.nz/Data-structures.html
-  - text: Happy Git and GitHub
-    link: http://happygitwithr.com/
-  notes:
+  notes: <a href='https://github.com/statprog-s1-2020/exercises'>Lecture exercises on GitHub</a>
 
 
 - week: 2
