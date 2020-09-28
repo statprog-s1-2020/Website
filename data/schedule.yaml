@@ -26,13 +26,17 @@ schedule:
 
 - week: 2
   day: 0
-  lecture: "git & Github"
+  lecture: "RStudio Cloud, git, & Github"
   slides:
-  screencast:
+  screencast: https://youtu.be/FBThm1WC8SA
   readings:
   - text: Happy Git and GitHub
     link: http://happygitwithr.com/
   notes:
+- week: 2
+  day: 2
+  lecture: "<i>Workshop 2</i>"
+  notes: Connect via Zoom link on Learn,<br/>make sure Zoom is updated to v5.3.1
 - week: 2
   day: 4
   lecture: "Data Structures & S3 <br/> Subsetting"
