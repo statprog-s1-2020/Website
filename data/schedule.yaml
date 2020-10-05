@@ -49,8 +49,8 @@ schedule:
 
 - week: 3
   day: 0
-  lecture: "Generic vectors & subsetting"
-  slides: 
+  lecture: "Generic vectors, data frames, & subsetting"
+  slides: Lec05
   readings:
   - text: Adv-R - Subsetting
     link: http://adv-r.had.co.nz/Subsetting.html
