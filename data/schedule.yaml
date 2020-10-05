@@ -45,12 +45,12 @@ schedule:
   readings:
   - text: Adv R - OO Field Guide - S3
     link: http://adv-r.had.co.nz/OO-essentials.html#s3
-  notes:
-
+  notes: <a href='https://youtu.be/kgGTT7Jq9BE'>Exercise solutions</a>
 - week: 3
   day: 0
   lecture: "Generic vectors, data frames, & subsetting"
   slides: Lec05
+  screencast: https://youtu.be/M539lK2Zuhk
   readings:
   - text: Adv-R - Subsetting
     link: http://adv-r.had.co.nz/Subsetting.html
