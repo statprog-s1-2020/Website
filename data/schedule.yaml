@@ -54,15 +54,16 @@ schedule:
   readings:
   - text: Adv-R - Subsetting
     link: http://adv-r.had.co.nz/Subsetting.html
-  notes:
+  notes: <a href='https://youtu.be/1OOQJqdjSgA'>Exercise solutions</a>
 - week: 2
   day: 2
   lecture: "<i>Workshop 3</i>"
   notes: Connect via Zoom link on Learn
 - week: 3
   day: 4
-  lecture: "Tidy data, dplyr"
-  slides: 
+  lecture: "Tidy data & dplyr"
+  slides: Lec06
+  screencast: https://youtu.be/ah9wyL3HHo8
   readings:
   - text: dplyr Vignette
     link: https://dplyr.tidyverse.org/articles/dplyr.html
@@ -70,8 +71,6 @@ schedule:
     link: http://r4ds.had.co.nz/tidy-data.html
   - text: Data transformation cheatsheet
     link: https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
-  - text: data import cheatsheet
-    link: https://github.com/rstudio/cheatsheets/blob/master/data-import.pdf
   notes: 
 
 - week: 4
