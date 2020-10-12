@@ -85,6 +85,11 @@ schedule:
   notes:
 
 - week: 4
+  day: 2
+  lecture: "<i>Workshop 4</i>"
+  notes: Connect via Zoom link on Learn
+
+- week: 4
   day: 4
   lecture: "purrr"
   slides: 
