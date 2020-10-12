@@ -34,7 +34,7 @@ schedule:
     link: http://happygitwithr.com/
   notes:
 - week: 2
-  day: 2
+  day: 1
   lecture: "<i>Workshop 2</i>"
   notes: Connect via Zoom link on Learn,<br/>make sure Zoom is updated to v5.3.1
 - week: 2
@@ -55,8 +55,8 @@ schedule:
   - text: Adv-R - Subsetting
     link: http://adv-r.had.co.nz/Subsetting.html
   notes: <a href='https://youtu.be/1OOQJqdjSgA'>Exercise solutions</a>
-- week: 2
-  day: 2
+- week: 3
+  day: 1
   lecture: "<i>Workshop 3</i>"
   notes: Connect via Zoom link on Learn
 - week: 3
@@ -64,6 +64,7 @@ schedule:
   lecture: "Tidy data & dplyr"
   slides: Lec06
   screencast: https://youtu.be/ah9wyL3HHo8
+  notes: https://youtu.be/FTi56rGHPzg
   readings:
   - text: dplyr Vignette
     link: https://dplyr.tidyverse.org/articles/dplyr.html
@@ -71,12 +72,13 @@ schedule:
     link: http://r4ds.had.co.nz/tidy-data.html
   - text: Data transformation cheatsheet
     link: https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf
-  notes: 
+  notes: <a href='https://youtu.be/FTi56rGHPzg'>Exercise solutions</a>
 
 - week: 4
   day: 0
   lecture: "tidyr"
   slides: Lec07
+  screencast: https://youtu.be/3GwkzIGlnEo
   readings:
   - text: tidyr pivoting
     link: https://tidyr.tidyverse.org/articles/pivot.html
@@ -85,7 +87,7 @@ schedule:
   notes:
 
 - week: 4
-  day: 2
+  day: 1
   lecture: "<i>Workshop 4</i>"
   notes: Connect via Zoom link on Learn
 
