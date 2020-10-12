@@ -75,7 +75,18 @@ schedule:
 
 - week: 4
   day: 0
-  lecture: "purrr & tidyr"
+  lecture: "tidyr"
+  slides: Lec07
+  readings:
+  - text: tidyr pivoting
+    link: https://tidyr.tidyverse.org/articles/pivot.html
+  - text: tidyr rectangling
+    link: https://tidyr.tidyverse.org/articles/rectangle.html
+  notes:
+
+- week: 4
+  day: 4
+  lecture: "purrr"
   slides: 
   readings:
   - text: Purrr tutorial
