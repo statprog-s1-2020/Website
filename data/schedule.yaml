@@ -107,37 +107,50 @@ schedule:
 
 - week: 5
   day: 0
-  lecture: "Visualization & ggplot2"
-  slides: 
+  lecture: "Visualization with ggplot2"
+  slides: Lec09
   readings:
   - text:  R4DS - Visualization
     link: http://r4ds.had.co.nz/data-visualisation.html
   - text: ggplot2 Reference
     link: http://ggplot2.tidyverse.org/reference/index.html
   notes: 
+  
+- week: 5
+  day: 1
+  lecture: "<i>Workshop 5</i>"
+  notes: Connect via Zoom link on Learn
+
+- week: 5
+  day: 4
+  lecture: "Designing a visualization"
+  slides: 
+  screencast:
+  readings:
+  notes:
 
 - week: 6
   day: 0
-  lecture: "Web Scraping"
+  lecture: "Structure, object orientation, profiling, debugging"
   readings:
   notes: 
 
 
 - week: 7
   day: 0
-  lecture: "Simulation & Bootstrapping"
+  lecture: "Optimization and MLE"
   readings:
   notes: 
 
 - week: 8
   day: 0
-  lecture: "Shiny"
+  lecture: "MCMC and Bayes, Metroplis Hastings, Gibbs"
   readings:
   notes: 
 
 - week: 9
   day: 0
-  lecture: "Markov Chain Monte Carlo"
+  lecture: "MCMC and Bayes, Metroplis Hastings, Gibbs<br/>Probabilistic programming"
   readings:
   notes: 
 
