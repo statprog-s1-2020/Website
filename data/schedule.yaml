@@ -124,9 +124,9 @@ schedule:
 
 - week: 5
   day: 4
-  lecture: "Designing a visualization"
-  slides: 
-  screencast:
+  lecture: "ggplot2 ecosystem & designing visualizations"
+  slides: Lec10
+  screencast: https://youtu.be/XCazwtMAbBg
   readings:
   notes:
 
