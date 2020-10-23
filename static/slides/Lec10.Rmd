@@ -1,5 +1,5 @@
 ---
-title: "Lec 09 - Visualizations and design"
+title: "Lec 10 - ggplot2 ecosystem & designing visualization"
 subtitle: "<br/> Statistical Programming"
 author: "Sem 1, 2020"
 date: "<br/> Dr. Colin Rundel"
@@ -54,7 +54,7 @@ g
 ```
 
 ```{r theme3, warning=FALSE, fig.height=5, fig.width=7, out.width="50%"}
-g + theme_base()
+g + theme_dark()
 ```
 ]
 
@@ -128,7 +128,7 @@ GGally::ggpairs(palmerpenguins::penguins)
 
 ---
 class: middle
-g
+
 ```{r echo=FALSE, fig.align="center", out.width="45%"}
 knitr::include_graphics("imgs/hex-ggrepel.png")
 ```
@@ -408,21 +408,6 @@ ggplot(datasauRus::datasaurus_dozen, aes(x = x, y = y, color = dataset)) +
   facet_wrap(~dataset) +
   guides(color=FALSE)
 ```
-
----
-
-```{r}
-datasaurus_dozen %>%
-  group_by(dataset) %>%
-  nest() %>%
-  mutate(
-    lm = map(data, ~ lm(y~x, data=.x)),
-    coefs = map(lm, "coefficients")
-  ) %>%
-  unnest_wider(coefs)
-  
-```
-
 
 ---
 
@@ -742,11 +727,6 @@ knitr::include_graphics("imgs/vis_gap.jpg")
 .footnote[
 http://thewhyaxis.info/gap-remake/
 ]
-
----
-class: middle, center
-
-# Acknowledgments
 
 ---
 

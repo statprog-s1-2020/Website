@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Lec 09 - Visualizations and design</title>
+    <title>Lec 10 - ggplot2 ecosystem &amp; designing visualization</title>
     <meta charset="utf-8" />
     <meta name="author" content="Sem 1, 2020" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-    <script src="libs/anchor-sections/anchor-sections.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="slides.css" type="text/css" />
   </head>
@@ -14,7 +12,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Lec 09 - Visualizations and design
+# Lec 10 - ggplot2 ecosystem &amp; designing visualization
 ## <br/> Statistical Programming
 ### Sem 1, 2020
 ### <br/> Dr. Colin Rundel
@@ -55,7 +53,7 @@ g
 
 
 ```r
-g + theme_base()
+g + theme_dark()
 ```
 
 &lt;img src="Lec10_files/figure-html/theme3-1.png" width="50%" style="display: block; margin: auto;" /&gt;
@@ -158,7 +156,7 @@ GGally::ggpairs(palmerpenguins::penguins)
 
 ---
 class: middle
-g
+
 &lt;img src="imgs/hex-ggrepel.png" width="45%" style="display: block; margin: auto;" /&gt;
 
 ---
@@ -442,7 +440,20 @@ ggplot(tidy_anscombe, aes(x = x, y = y, color = as.factor(group))) +
 
 ```r
 library(datasauRus)
+```
 
+```
+## 
+## Attaching package: 'datasauRus'
+```
+
+```
+## The following object is masked _by_ '.GlobalEnv':
+## 
+##     datasaurus_dozen
+```
+
+```r
 ggplot(
   datasaurus_dozen, 
   aes(
@@ -536,52 +547,18 @@ ggplot(datasauRus::datasaurus_dozen, aes(x = x, y = y, color = dataset)) +
 
 ---
 
-
-```r
-datasaurus_dozen %&gt;%
-  group_by(dataset) %&gt;%
-  nest() %&gt;%
-  mutate(
-    lm = map(data, ~ lm(y~x, data=.x)),
-    coefs = map(lm, "coefficients")
-  ) %&gt;%
-  unnest_wider(coefs)
-```
-
-```
-## # A tibble: 12 x 5
-## # Groups:   dataset [12]
-##    dataset    data               lm     `(Intercept)`       x
-##    &lt;chr&gt;      &lt;list&gt;             &lt;list&gt;         &lt;dbl&gt;   &lt;dbl&gt;
-##  1 dino       &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.5 -0.104 
-##  2 away       &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.4 -0.103 
-##  3 h_lines    &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.2 -0.0992
-##  4 v_lines    &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.9 -0.112 
-##  5 star       &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.3 -0.101 
-##  6 high_lines &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.8 -0.110 
-##  7 dots       &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.1 -0.0969
-##  8 circle     &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.8 -0.110 
-##  9 bullseye   &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.8 -0.110 
-## 10 slant_up   &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.8 -0.110 
-## 11 slant_down &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.8 -0.111 
-## 12 wide_lines &lt;tibble [142 × 2]&gt; &lt;lm&gt;            53.6 -0.107
-```
-
-
----
-
 ## Simpson's Paradox
 
 
 
 .pull-left[
-&lt;img src="Lec10_files/figure-html/unnamed-chunk-18-1.png" width="1050" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec10_files/figure-html/unnamed-chunk-17-1.png" width="1050" style="display: block; margin: auto;" /&gt;
 ]
 
 --
 
 .pull-right[
-&lt;img src="Lec10_files/figure-html/unnamed-chunk-19-1.png" width="1050" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec10_files/figure-html/unnamed-chunk-18-1.png" width="1050" style="display: block; margin: auto;" /&gt;
 ]
 
 
@@ -608,11 +585,11 @@ class: center, middle
 ## Use color	to	draw	attention
 
 .pull-left[
-&lt;img src="Lec10_files/figure-html/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec10_files/figure-html/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
-&lt;img src="Lec10_files/figure-html/unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="Lec10_files/figure-html/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -788,11 +765,6 @@ http://thewhyaxis.info/defaults/
 .footnote[
 http://thewhyaxis.info/gap-remake/
 ]
-
----
-class: middle, center
-
-# Acknowledgments
 
 ---
 
