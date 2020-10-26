@@ -132,9 +132,14 @@ schedule:
 
 - week: 6
   day: 0
-  lecture: "Structure, object orientation, profiling, debugging"
+  lecture: "Structure, debugging, and profiling"
   readings:
-  notes: 
+  notes: <a href='https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1'>Slides</a>
+
+- week: 6
+  day: 1
+  lecture: "<i>Project 1 Office Hours</i>"
+  notes: See Learn announcement
 
 
 - week: 7
