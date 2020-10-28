@@ -49,12 +49,16 @@
               
               {{ if (fileExists (print "static/" $slides_html)) }}
                 <a href="{{ $slides_html }}"><i class="far fa-file fa-fw active"></i></a>
+              {{ else if (.ext_html) }}
+                <a href="{{ .ext_html | safeHTMLAttr }}"><i class="far fa-file fa-fw active"></i></a>
               {{ else }}
                 <i class="far fa-file fa-fw inactive"></i>
               {{ end }}
 
               {{ if (fileExists (print "static/" $slides_pdf)) }}
                 <a href="{{ $slides_pdf }}"><i class="far fa-file-pdf fa-fw active"></i></a>
+              {{ else if (.ext_pdf) }}
+                <a href="{{ .ext_pdf | safeHTMLAttr }}"><i class="far fa-file-pdf fa-fw active"></i></a>
               {{ else }}
                 <i class="far fa-file-pdf fa-fw inactive"></i>
               {{ end }}
@@ -66,7 +70,7 @@
               {{ end }}
   
               {{ if .screencast }}
-                <a href="{{ .screencast | safeHTMLAttr}}"><i class="fab fa-youtube fa-fw youtube"></i></a>
+                <a href="{{ .screencast | safeHTMLAttr }}"><i class="fab fa-youtube fa-fw youtube"></i></a>
               {{ else }}
                 <i class="fab fa-youtube fa-fw inactive"></i>
               {{ end }}

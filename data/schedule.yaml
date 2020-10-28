@@ -7,10 +7,13 @@ schedule:
   slides: Lec01
   screencast: https://www.youtube.com/watch?v=pPnG_toh9uE
   notes:
+
 - week: 1
   day: 1
+  lab: true
   lecture: "<i>Workshop 1</i>"
   notes: Connect via Zoom link on Learn
+
 - week: 1
   day: 4
   lecture: "Logic and Types in R"
@@ -33,10 +36,13 @@ schedule:
   - text: Happy Git and GitHub
     link: http://happygitwithr.com/
   notes:
+  
 - week: 2
   day: 1
+  lab: true
   lecture: "<i>Workshop 2</i>"
   notes: Connect via Zoom link on Learn,<br/>make sure Zoom is updated to v5.3.1
+
 - week: 2
   day: 4
   lecture: "Functions, attributes, & S3"
@@ -46,6 +52,7 @@ schedule:
   - text: Adv R - OO Field Guide - S3
     link: http://adv-r.had.co.nz/OO-essentials.html#s3
   notes: <a href='https://youtu.be/kgGTT7Jq9BE'>Exercise solutions</a>
+
 - week: 3
   day: 0
   lecture: "Generic vectors, data frames, & subsetting"
@@ -55,10 +62,13 @@ schedule:
   - text: Adv-R - Subsetting
     link: http://adv-r.had.co.nz/Subsetting.html
   notes: <a href='https://youtu.be/1OOQJqdjSgA'>Exercise solutions</a>
+
 - week: 3
   day: 1
+  lab: true
   lecture: "<i>Workshop 3</i>"
   notes: Connect via Zoom link on Learn
+
 - week: 3
   day: 4
   lecture: "Tidy data & dplyr"
@@ -88,6 +98,7 @@ schedule:
 
 - week: 4
   day: 1
+  lab: true
   lecture: "<i>Workshop 4</i>"
   notes: Connect via Zoom link on Learn
 
@@ -119,6 +130,7 @@ schedule:
   
 - week: 5
   day: 1
+  lab: true
   lecture: "<i>Workshop 5</i>"
   notes: Connect via Zoom link on Learn
 
@@ -133,11 +145,16 @@ schedule:
 - week: 6
   day: 0
   lecture: "Structure, debugging, and profiling"
+  ext_pdf: "https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1"
+  screencast: https://media.ed.ac.uk/media/1_wr7b8vro
   readings:
-  notes: <a href='https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1'>Slides</a>
+  - text: Core Statistics
+    link: https://www.maths.ed.ac.uk/~swood34/core-statistics.pdf
+  notes:
 
 - week: 6
   day: 1
+  lab: true
   lecture: "<i>Project 1 Office Hours</i>"
   notes: See Learn announcement
 
