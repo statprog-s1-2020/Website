@@ -173,11 +173,11 @@ schedule:
   lecture: "Optimization and MLE"
   slides: https://www.learn.ed.ac.uk/bbcswebdav/pid-5331765-dt-content-rid-17002844_1/xid-17002844_1
   screencast: https://media.ed.ac.uk/media/1_fayq0ouw
+  ## seems that readings use the text link approach, but notes are just free form. 
   readings:
   - text: Core Statistics (5)
     link: https://www.maths.ed.ac.uk/~swood34/core-statistics.pdf
-  notes: 
-  - text: No Friday lecture to compensate for length of lectures 11-13
+  notes: No Friday lecture to compensate for length of lectures 11-13 
 - week: 8
   day: 0
   lecture: "Programming with random variables"
