@@ -145,7 +145,7 @@ schedule:
 - week: 6
   day: 0
   lecture: "Structure, debugging, and profiling"
-  slides: https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1
+  .ext_pdf: https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1
   screencast: https://media.ed.ac.uk/media/1_wr7b8vro
   readings:
   - text: Core Statistics
