@@ -145,7 +145,7 @@ schedule:
 - week: 6
   day: 0
   lecture: "Structure, debugging, and profiling"
-  ext_pdf: "https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1"
+  slides: https://www.learn.ed.ac.uk/bbcswebdav/xid-16826294_1
   screencast: https://media.ed.ac.uk/media/1_wr7b8vro
   readings:
   - text: Core Statistics
@@ -157,17 +157,32 @@ schedule:
   lab: true
   lecture: "<i>Project 1 Office Hours</i>"
   notes: See Learn announcement
-
+  
+- week: 6
+  day: 4
+  lecture: "Basic Programming with Matrices"
+  slides:
+  screencast: https://media.ed.ac.uk/media/1_r67bypjh
+  readings:
+  - text: Core Statistics (3.3 + Appendix B)
+    link: https://www.maths.ed.ac.uk/~swood34/core-statistics.pdf
+  notes:
+  - text: R file of exercises
+    link: exercises/exercise-w6.r
 
 - week: 7
   day: 0
   lecture: "Optimization and MLE"
+  slides: https://www.learn.ed.ac.uk/bbcswebdav/pid-5331765-dt-content-rid-17002844_1/xid-17002844_1
+  screencast: https://media.ed.ac.uk/media/1_fayq0ouw
   readings:
+  - text: Core Statistics (5)
+    link: https://www.maths.ed.ac.uk/~swood34/core-statistics.pdf
   notes: 
-
+  - text: No Friday lecture to compensate for length of lectures 11-13
 - week: 8
   day: 0
-  lecture: "MCMC and Bayes, Metroplis Hastings, Gibbs"
+  lecture: "Programming with random variables"
   readings:
   notes: 
 
